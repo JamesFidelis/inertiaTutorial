@@ -6,22 +6,31 @@
 
 
     <form @submit.prevent="submit">
-        <div class="col">
 
-            <label for="name">Full name:</label>
-            <input id="name" v-model="form.names" />
-            <div v-if="form.errors.names">{{ form.errors.names }}</div>
-        </div>
-        <div class="col>">
+        <div class="grid grid-cols-2 gap-6 p-8">
 
-            <label for="position">Position:</label>
-            <input id="position" v-model="form.position" />
-            <div v-if="form.errors.position">{{ form.errors.position }}</div>
+            <div>
+
+                <label for="name">Full name</label>
+                <input id="name" placeholder="Full Name" class="input-box" v-model="form.names" />
+                <div v-if="form.errors.names" class="input-error">{{ form.errors.names }}</div>
+            </div>
+            <div>
+
+                <label for="position">Position</label>
+                <input id="position" placeholder="Position" class="input-box" v-model="form.position" />
+                <div v-if="form.errors.position" class="input-error">{{ form.errors.position }}</div>
+            </div>
+
+            <div>
+                <button type="submit" class="bg-sky-500 hover:bg-sky-700 text-center p-2 rounded-md" :disabled="form.processing">Submit</button>
+            </div>
+
+
         </div>
 
-        <div class="col">
-            <button type="submit" :disabled="form.processing">Submit</button>
-        </div>
+
+
 
     </form>
 

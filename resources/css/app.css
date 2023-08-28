@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components{
+    .input-error{
+        @apply text-sm text-red-500 dark:text-red-400
+    }
+    .input-box{
+        @apply block w-full p-2 rounded-md shadow-sm border border-gray-300 dark:border-gray-600
+    }
+}
+
+
