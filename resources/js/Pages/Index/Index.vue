@@ -2,7 +2,7 @@
 <template>
 
 
-     <div>Index</div>
+<!--     <Header/>-->
      <div>
          The message is {{message}}
      </div>
@@ -17,6 +17,7 @@
 <script>
     import { Link } from '@inertiajs/inertia-vue3';
     import MainLayout from "../../Layouts/MainLayout.vue";
+    // import Header from "../../Layouts/Header.vue";
 
 
     export default {
@@ -26,6 +27,7 @@
         },
         components: {
             Link,
+            // Header
 
         },
     }

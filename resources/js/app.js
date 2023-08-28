@@ -6,6 +6,7 @@ import {InertiaProgress} from "@inertiajs/progress";
 import {ZiggyVue} from "ziggy-js/dist/vue.es";
 
 
+
 InertiaProgress.init({
     delay:0,
     color:'#29d',
