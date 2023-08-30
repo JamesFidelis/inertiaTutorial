@@ -4,7 +4,7 @@ import MainLayout from "./Layouts/MainLayout.vue";
 import '../css/app.css'
 import {InertiaProgress} from "@inertiajs/progress";
 import {ZiggyVue} from "ziggy-js/dist/vue.es";
-
+import 'flowbite';
 
 
 InertiaProgress.init({

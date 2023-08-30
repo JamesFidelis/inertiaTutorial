@@ -11,6 +11,17 @@ use function Spatie\Ignition\Solutions\OpenAi\delete;
 
 class EmployeesController extends Controller
 {
+
+
+    public function __construct()
+    {
+
+        $this->middleware('auth')->except(['index','show']);
+
+    }
+
+
+
     /**
      * Display a listing of the resource.
      */
