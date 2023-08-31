@@ -1,7 +1,7 @@
 <template>
 
 
-    <header class="border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 w-full">
+    <header class="border-b bg-white border-gray-200 dark:bg-gray-900 w-full">
 
             <nav class="bg-white border-gray-200 dark:bg-gray-900">
                 <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">

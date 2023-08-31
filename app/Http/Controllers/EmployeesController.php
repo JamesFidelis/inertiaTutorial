@@ -29,7 +29,7 @@ class EmployeesController extends Controller
     {
 
        return Inertia::render('Employees/Index',[
-           'employees'=>Employees::all()
+           'employees'=>Employees::orderByDesc('created_at')->paginate(5)
        ]);
     }
 

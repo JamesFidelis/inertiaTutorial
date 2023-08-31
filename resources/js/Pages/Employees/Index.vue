@@ -8,7 +8,7 @@
 
 
 
-            <div v-for="employee in employees" :key="employee.id" >
+            <div v-for="employee in employees.data" :key="employee.id" >
                 <Box>
                     <div >{{employee.name}}</div><br>
 
@@ -22,6 +22,10 @@
 
     </div>
 
+    <div class="w-full flex justify-center mt-8 mb-8">
+        <Pagination v-if="employees.data.length" :pages="employees.links"></Pagination>
+    </div>
+
 
 </template>
 
@@ -33,16 +37,18 @@
     import { Link } from '@inertiajs/inertia-vue3';
     import { router } from '@inertiajs/vue3'
     import Box from "../../Components/UI/Box.vue";
+    import Pagination from "../../Components/UI/Pagination.vue";
 
 
 
     export default {
         props: {
-            employees: Array,
+            employees: Object,
         },
         components: {
             Link,
-            Box
+            Box,
+            Pagination
 
         },
     }
